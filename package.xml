@@ -1,0 +1,41 @@
+<Meta>
+  <title>No Negative Food Traits</title>
+  <id>omegaplatinum.elin.nonegativefoodtraits</id>
+  <author>OmegaPlatinum</author>
+  <loadPriority>100</loadPriority>
+  <description>
+    Removes all negative food traits upon creation.
+    食品の生成時にすべての負の特性を削除し、ポジティブまたは中立的な効果のみを残します。
+
+    [h1] Note [/h1]
+    Please note that this mod does not prevent food from decaying over time.
+
+    [h1] Features [/h1]
+    [list]
+    [*] Automatically removes all food traits with negative values from food items upon creation.
+    [*] Compatible with existing save files.
+    [/list]
+
+    [h1] Compatibility [/h1]
+    This mod works with existing save files.
+
+    Supports Game Version: 0.23.61
+
+    [h1] 注意 [/h1]
+    このMODは食品が時間の経過によって自然に腐敗するのを防ぐものではないことにご注意ください。
+
+    [h1] 特徴 [/h1]
+    [list]
+    [*] 食品の生成時にすべての負の特性を自動的に削除します。
+    [*] 既存のセーブデータと互換性があります。
+    [/list]
+
+    [h1] 互換性 [/h1]
+    このMODは既存のセーブデータと完全に互換性があり、新しいプレイスルーは不要です。
+
+    対応ゲームバージョン: 0.23.61
+  </description>
+  <tags>General,Balance</tags>
+  <visibility>Public</visibility>
+  <version>0.23.61</version>
+</Meta>
