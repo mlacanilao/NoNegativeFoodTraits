@@ -7,7 +7,7 @@ namespace NoNegativeFoodTraits
     {
         internal const string Guid = "omegaplatinum.elin.nonegativefoodtraits";
         internal const string Name = "No Negative Food Traits";
-        internal const string Version = "1.1.1.0";
+        internal const string Version = "1.1.1.1";
     }
 
     [BepInPlugin(GUID: ModInfo.Guid, Name: ModInfo.Name, Version: ModInfo.Version)]
@@ -19,7 +19,7 @@ namespace NoNegativeFoodTraits
         {
             Instance = this;
             
-            Harmony.CreateAndPatchAll(type: typeof(Patcher));
+            Harmony.CreateAndPatchAll(type: typeof(Patcher), harmonyInstanceId: ModInfo.Guid);
         }
         
         internal static void Log(object payload)
