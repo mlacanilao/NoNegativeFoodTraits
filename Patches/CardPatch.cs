@@ -11,18 +11,18 @@ namespace NoNegativeFoodTraits.Patches
                 return;
             }
             
-            List<Element> negativeElement = new List<Element>();
+            List<int> negativeElementIds = new List<int>();
             foreach (Element element in __instance.elements.dict.Values)
             {
                 if (element.Value <= 0)
                 {
-                    negativeElement.Add(element);
+                    negativeElementIds.Add(element.id);
                 }
             }
             
-            foreach (Element element in negativeElement)
+            foreach (int elementId in negativeElementIds)
             {
-                __instance.elements.SetTo(id: element.id, v: 0);
+                __instance.elements?.SetTo(id: elementId, v: 0);
             }
         }
     }
