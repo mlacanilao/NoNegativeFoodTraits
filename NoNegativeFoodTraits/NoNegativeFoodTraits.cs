@@ -7,7 +7,7 @@ namespace NoNegativeFoodTraits
     {
         internal const string Guid = "omegaplatinum.elin.nonegativefoodtraits";
         internal const string Name = "No Negative Food Traits";
-        internal const string Version = "1.1.2.2";
+        internal const string Version = "1.2.0";
     }
 
     [BepInPlugin(GUID: ModInfo.Guid, Name: ModInfo.Name, Version: ModInfo.Version)]

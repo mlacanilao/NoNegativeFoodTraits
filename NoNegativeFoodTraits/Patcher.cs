@@ -32,5 +32,12 @@ namespace NoNegativeFoodTraits
         {
             return ElementContainerPatch.SetBasePrefix(__instance: __instance, v: v);
         }
+        
+        [HarmonyPrefix]
+        [HarmonyPatch(declaringType: typeof(ElementContainer), methodName: nameof(ElementContainer.ModBase))]
+        public static bool ElementContainerModBase(ElementContainer __instance, int v)
+        {
+            return ElementContainerPatch.ModBasePrefix(__instance: __instance, v: v);
+        }
     }
 }

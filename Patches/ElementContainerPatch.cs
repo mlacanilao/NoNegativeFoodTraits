@@ -11,5 +11,15 @@ namespace NoNegativeFoodTraits.Patches
             
             return true;
         }
+        
+        public static bool ModBasePrefix(ElementContainer __instance, int v)
+        {
+            if (__instance?.Card?.IsFood == true && v < 0)
+            {
+                return false;
+            }
+            
+            return true;
+        }
     }
 }
