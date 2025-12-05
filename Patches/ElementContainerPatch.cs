@@ -12,9 +12,13 @@ namespace NoNegativeFoodTraits.Patches
             return true;
         }
         
-        public static bool ModBasePrefix(ElementContainer __instance, int v)
+        public static bool ModBasePrefix(ElementContainer __instance, int ele, int v)
         {
-            if (__instance?.Card?.IsFood == true && v < 0)
+            NoNegativeFoodTraits.Log(payload: $"ModBasePrefix");
+            
+            if (__instance?.Card?.IsFood == true && 
+                v < 0 &&
+                __instance?.Card?.trait is TraitLunch == false)
             {
                 return false;
             }
